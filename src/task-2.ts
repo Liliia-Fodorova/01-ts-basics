@@ -3,9 +3,9 @@
 //У цьому фрагменті коду є об'єкт product, який описує товар.
 
 interface Product{
-    id: number;
+    readonly id: number;
     title: string;
-    description: string;
+    description?: string;
 }
 
 const product: Product = {
